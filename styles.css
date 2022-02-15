@@ -256,6 +256,13 @@ body {
         height: 40%;
     }
 
-    
+    @media (max-height: 500px) {
+        
+        .add-menu {
+            height: 125%;
+            width: 95%;
+        }
+    }
 
 }
+
