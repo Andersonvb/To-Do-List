@@ -240,7 +240,7 @@ body {
 
     .add-menu {
         width: 90%;
-        height: 70%;
+        min-height: 70%;
     }
     .add-menu__buttons {
         flex-direction: column;
