@@ -1,0 +1,259 @@
+/* https://colorhunt.co/palette/1c658c398ab9d8d2cbeeeeee */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #398AB9;
+
+}
+
+/* Main page */
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Header */
+.title {
+    margin: 10px;
+    font-size: 4rem;
+    color: #fff;
+}
+
+
+/* Item list */
+
+.item-list {
+    width: 50%;
+    height: 80vh;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+/* Item */
+
+.item {
+    width: 50%;
+    height: 50px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: none;
+    border-radius: 1rem;
+    background-color: #EEEEEE;
+}
+.item__checkbox {
+    margin: 0 10px 0 20px;
+}
+.item__label {
+    margin: 0 0 0 10px;
+}
+.item__trash {
+    margin-left: auto;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+/* Add task */
+
+.item__add-task {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    transition: all 0.5s;
+}
+.item__add-task:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: #000;
+    transition: all 0.5s;
+}
+.item__add-icon {
+    margin: 0 10px;
+}
+
+/* Add Task Menu */
+
+.add-menu {
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 1rem;
+    background-color: #fff;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.add-menu__title {
+    margin: 30px 0;
+    font-size: 2rem;
+}
+.add-menu__input {
+    width: 50%;
+    margin: 30px 0;
+    font-size: 1rem;
+    line-height: 2rem;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+.add-menu__input:focus {
+    outline: none;
+}
+.add-menu__buttons {
+    margin: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-menu__btn {
+    margin: 0 30px;
+    padding: 10px 40px;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: #398AB9;
+    transition: all 0.5s;
+}
+.add-menu__btn:hover {
+    text-decoration: none;
+    background: #000;
+    transition: all 0.5s;
+}
+
+/* Empty input */
+
+.empty-input {
+    width: 30%;
+    height: 25%;
+    padding: 30px 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    background-color: #fff;
+    opacity: 1;
+    transition: all 0.5s;
+}
+.empty-text{
+    margin: 20px 0;
+}
+.x-icon {
+    font-size: 2.5rem;
+    margin: 20px;
+}
+.empty-btn {
+    margin: 20px 0;
+    padding: 10px 40px;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: #fff;
+    background: #398AB9;
+    transition: all 0.5s;
+}
+.empty-btn:hover {
+    text-decoration: none;
+    background: #000;
+    transition: all 0.5s;
+}
+
+/* Useful classes */
+
+.invisible {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1240px) {
+
+    .item-list {
+        width: 80%;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    .add-menu {
+        width: 50%;
+    }
+
+}
+
+@media (max-width: 1000px) {
+
+   
+    .item-list {
+        width: 95%;
+    }
+
+    .item {
+        width: 70%;
+    }
+
+    .add-menu {
+        width: 70%;
+    }
+
+    .empty-input {
+        width: 60%;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    .item-list {
+        width: 100%;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    .add-menu {
+        width: 90%;
+        height: 70%;
+    }
+    .add-menu__buttons {
+        flex-direction: column;
+        gap: 20px 0;
+    }
+    .add-menu__btn {
+        margin: 0;
+        width: 50%;
+    }
+
+    .empty-input {
+        width: 60%;
+    }
+
+
+}
